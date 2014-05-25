@@ -17,7 +17,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-  inverse <<- NULL # Set the matrix inverse to null globally
+  matrixinverse <<- NULL # Set the matrix inverse to null globally
   
   ## First Function: Assign the matrix to the variable x globally 
   ## and its inverse to NULL globally
@@ -56,7 +56,7 @@ cacheSolve <- function(x, ...) {
     return(matrixinverse)
   }
   data <- x$get() # Retrieve x
-  matrixinverse <- solve(x) # compute the matrix inverse
+  matrixinverse <- solve(data) # compute the matrix inverse
   x$setinverse(matrixinverse) # cache the computed matrix inverse
   matrixinverse
 }
