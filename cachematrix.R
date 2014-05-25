@@ -14,6 +14,7 @@
   #get the value of the matrix
   #set the value of the inverse of the matrix
   #get the value of the inverse of the matrix
+  #Returns a list of these functions
 
 makeCacheMatrix <- function(x = matrix()) {
 
